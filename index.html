@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>FAC Medicaid County Contributions</title>
+  
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Florida Medicaid County Contributions">
+    <meta name="author" content="Florida Association of Counties">
+    <meta name="robots" content="noindex">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--external css-->
+  <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+  <!-- Custom styles for this page-->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style-responsive.css" rel="stylesheet">
+  <link href="assets/css/table-responsive.css" rel="stylesheet">
+  
+  <style>
+
+    .pre-scrollable a {
+      color: white !important;
+    }
+
+    .pre-scrollable a:hover {
+      color: gray !important;
+    }
+
+    #share-buttons img {
+      width: 35px;
+      padding: 5px;
+      border: 0;
+      box-shadow: rgb(0, 0, 0);
+      display: inline;
+    }
+
+    #medicaid {
+      background-image: linear-gradient(to bottom, rgba(3, 4, 47, 0.0), rgba(3, 4, 47, 0.0));
+    }
+    
+  </style>
+</head>
+<body  style="background-image: linear-gradient(to bottom, rgba(3, 4, 47, 1), rgba(3, 4, 47, 0.86));">
+    <nav class="navbar navbar-default navbar-static" style="text-align: center; background-color: rgba(3, 4, 47, 1); border-color: rgba(3, 4, 47, 1);">
+    <div class="navbar-header collapse navbar-collapse js-navbar-collapse">
+        <a class="navbar-brand" href="index.html" style="color: white; font-size: 24px;"><b>Florida Medicaid County Contributions: </b></a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li class="active dropdown">
+            <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="background-color: rgba(3, 4, 47, 1); color: white; font-size: 24px"><b>Alachua County</b>
+                <span class="caret"></span></a>
+            <ul class="dropdown-menu pre-scrollable" style="background-color: rgba(3, 4, 47, 1);">
+                <li><a href="index.html" style="font-size: 18px">ALL COUNTIES</a></li>
+                <li><a href="Alachua.html">Alachua County</a></li>
+                <li><a href="Baker.html">Baker County</a></li>
+                <li><a href="Bay.html">Bay County</a></li>
+                <li><a href="Bradford.html">Bradford County</a></li>
+                <li><a href="Brevard.html">Brevard County</a></li>
+                <li><a href="Broward.html">Broward County</a></li>
+                <li><a href="Calhoun.html">Calhoun County</a></li>
+                <li><a href="Charlotte.html">Charlotte County</a></li>
+                <li><a href="Citrus.html">Citrus County</a></li>
+                <li><a href="Clay.html">Clay County</a></li>
+                <li><a href="Collier.html">Collier County</a></li>
+                <li><a href="Columbia.html">Columbia County</a></li>
+                <li><a href="Miami-Dade.html">Miami-Dade County</a></li>
+                <li><a href="DeSoto.html">DeSoto County</a></li>
+                <li><a href="Dixie.html">Dixie County</a></li>
+                <li><a href="Duval.html">Duval County</a></li>
+                <li><a href="Escambia.html">Escambia County</a></li>
+                <li><a href="Flagler.html">Flagler County</a></li>
+                <li><a href="Franklin.html">Franklin County</a></li>
+                <li><a href="Gadsden.html">Gadsden County</a></li>
+                <li><a href="Gilchrist.html">Gilchrist County</a></li>
+                <li><a href="Glades.html">Glades County</a></li>
+                <li><a href="Gulf.html">Gulf County</a></li>
+                <li><a href="Hamilton.html">Hamilton County</a></li>
+                <li><a href="Hardee.html">Hardee County</a></li>
+                <li><a href="Hendry.html">Hendry County</a></li>
+                <li><a href="Hernando.html">Hernando County</a></li>
+                <li><a href="Highlands.html">Highlands County</a></li>
+                <li><a href="Hillsborough.html">Hillsborough County</a></li>
+                <li><a href="Holmes.html">Holmes County</a></li>
+                <li><a href="IndianRiver.html">Indian River County</a></li>
+                <li><a href="Jackson.html">Jackson County</a></li>
+                <li><a href="Jefferson.html">Jefferson County</a></li>
+                <li><a href="Lafayette.html">Lafayette County</a></li>
+                <li><a href="Lake.html">Lake County</a></li>
+                <li><a href="Lee.html">Lee County</a></li>
+                <li><a href="Leon.html">Leon County</a></li>
+                <li><a href="Levy.html">Levy County</a></li>
+                <li><a href="Liberty.html">Liberty County</a></li>
+                <li><a href="Madison.html">Madison County</a></li>
+                <li><a href="Manatee.html">Manatee County</a></li>
+                <li><a href="Marion.html">Marion County</a></li>
+                <li><a href="Martin.html">Martin County</a></li>
+                <li><a href="Monroe.html">Monroe County</a></li>
+                <li><a href="Nassau.html">Nassau County</a></li>
+                <li><a href="Okaloosa.html">Okaloosa County</a></li>
+                <li><a href="Okeechobee.html">Okeechobee County</a></li>
+                <li><a href="Orange.html">Orange County</a></li>
+                <li><a href="Osceola.html">Osceola County</a></li>
+                <li><a href="PalmBeach.html">Palm Beach County</a></li>
+                <li><a href="Pasco.html">Pasco County</a></li>
+                <li><a href="Pinellas.html">Pinellas County</a></li>
+                <li><a href="Polk.html">Polk County</a></li>
+                <li><a href="Putnam.html">Putnam County</a></li>
+                <li><a href="SaintJohns.html">Saint Johns County</a></li>
+                <li><a href="SaintLucie.html">Saint Lucie County</a></li>
+                <li><a href="SantaRosa.html">Santa Rosa County</a></li>
+                <li><a href="Sarasota.html">Sarasota County</a></li>
+                <li><a href="Seminole.html">Seminole County</a></li>
+                <li><a href="Sumter.html">Sumter County</a></li>
+                <li><a href="Suwannee.html">Suwannee County</a></li>
+                <li><a href="Taylor.html">Taylor County</a></li>
+                <li><a href="Union.html">Union County</a></li>
+                <li><a href="Volusia.html">Volusia County</a></li>
+                <li><a href="Wakulla.html">Wakulla County</a></li>
+                <li><a href="Walton.html">Walton County</a></li>
+                <li><a href="Washington.html">Washington County</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div id="share-buttons" style="float: right; margin-right:3%; margin-top: 0.5%;">
+
+        <!-- Buffer -->
+        <a href="https://bufferapp.com/add?url=https://floridaassociationofcounties.github.io/Medicaid-County-Contributions&amp;text=Florida Medicaid County Contributions" target="_blank">
+            <img src="https://simplesharebuttons.com/images/somacro/buffer.png" alt="Buffer" />
+        </a>
+
+        <!-- Twitter -->
+        <a href="https://twitter.com/share?url=https://floridaassociationofcounties.github.io/Medicaid-County-Contributions&amp;text=Florida%20Medicaid%20County%20Contributions:&amp;hashtags=CountyMedicaid" target="_blank">
+            <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+        </a>
+
+        <!-- Facebook -->
+        <a href="http://www.facebook.com/sharer.php?u=https://floridaassociationofcounties.github.io/Medicaid-County-Contributions" target="_blank">
+            <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+        </a>
+
+        <!-- Google+ -->
+        <a href="https://plus.google.com/share?url=https://floridaassociationofcounties.github.io/Medicaid-County-Contributions" target="_blank">
+            <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://floridaassociationofcounties.github.io/Medicaid-County-Contributions" target="_blank">
+            <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:?Subject=Florida Medicaid County Contributions&amp;Body=Find each county's contribution at: https://floridaassociationofcounties.github.io/Medicaid-County-Contributions">
+            <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+        </a>
+
+    </div>
+</nav>
+    <canvas id="medicaid" style="position: realtive; height: 80vh; width: 90vw; padding: 0.5%;"></canvas>
+    <a href="FAC Medicaid County Contributions.xlsx" style="color: white; font-size: 22px; margin-left: 1%;" download><u>Download the entire Microsoft Excel file</u></a>
+    <script type="text/javascript">
+      var ctx = document.getElementById('medicaid').getContext('2d');
+      var drugOverdosesChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["2009-10", "2010-11", "2011-12", "2012-13", "2013-14", "2014-15", "2015-16", "2016-17", "2017-18", "2018-19"],
+        datasets: [{
+            label: 'County Emergency Management Grants',
+            data: [7194867, 7194867, 7194867, 7194867, 7194867, 7194867, 7194867, 7194867, 7194867, 7194867],
+            backgroundColor: 'rgba(255, 59, 70, 0.4)',
+            borderColor: 'rgba(255, 59, 70, 1)',
+            borderWidth: 1,
+            fill: 1,
+            pointStyle: 'circle',
+            pointRadius: 3.5
+          },
+          {
+          	label: "State Emergency Management Operations",
+          	data: [5468958, 6200636, 5720662, 5449726, 6462444, 8409400, 7876618, 8001894, 8130275, 8469201],
+          	backgroundColor: 'rgba(54, 162, 235, 0.4)',
+          	borderColor: 'rgba(54, 162, 235, 1)',
+          	borderWidth: 1,
+            fill: false,
+            pointStyle: 'triangle',
+            pointRadius: 5.5
+          }
+        ]
+    },
+    options: {
+        responsive: true,
+        title: {
+          display: false,
+          position: "top",
+          text: "History of Emergency Management Preparedness and Assistance Trust Fund - Appropriations",
+          fontSize: 20,
+          fontColor: "white"
+        },
+        legend: { display: true, labels: { fontColor: "white", fontSize: 15, usePointStyle: true } },
+        scales: {
+        	xAxes: [{ stacked: false, scaleLabel: { display: true, labelString: 'State Fiscal Year', fontSize: 17, fontColor: "white" }, ticks: { fontColor: "white", fontSize: 16 } }],
+          yAxes: [{ stacked: false, scaleLabel: { display: true, labelString: 'Total Medicaid Contributions from Alachua County', fontSize: 17, fontColor: "white" },
+                    ticks: { beginAtZero: true,
+                             fontColor: "white",
+                             fontSize: 16,
+                             callback: function(value, index, values){
+                                        value = value.toString();
+                                        value = value.split(/(?=(?:...)*$)/);
+                                        value = value.join(",");
+                                        return "$" + value;
+                                       }
+                            }
+                  }]
+
+        },
+        tooltips: {
+          enabled: true,
+          mode:'index',
+          intersect: false,
+          callbacks: {
+            label: function(tooltipItem, data) {
+              var value = tooltipItem.yLabel;
+              value = value.toString();
+              value = value.split(/(?=(?:...)*$)/);
+              value = value.join(',');
+              return data.datasets[tooltipItem.datasetIndex].label + ": $" + value;
+            }
+          }
+        }
+    }
+});
+  </script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
+</body>
+</html>
